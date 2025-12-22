@@ -1,3 +1,4 @@
+```mermaid
 flowchart LR
     %% === Entwickler ===
     subgraph DEV["👨‍💻 Entwickler (Schüler*innen)"]
@@ -39,3 +40,4 @@ flowchart LR
 
     %% === Kommunikation ===
     G2 <--> G1
+```
