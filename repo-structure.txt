@@ -1,0 +1,30 @@
+classnotes/
+├── backend/
+│   ├── ClassNotes.Api.csproj
+│   ├── Program.cs
+│   ├── Models/
+│   │    └── Note.cs
+│   ├── Data/
+│   │    └── NotesDbContext.cs
+│   ├── Migrations/
+│   └── Properties/
+│        └── launchSettings.json
+│
+├── frontend/
+│   ├── index.html
+│   ├── package.json
+│   ├── vite.config.js
+│   └── src/
+│        ├── App.jsx
+│        ├── api.js
+│        └── components/
+│             ├── NoteList.jsx
+│             └── AddNoteForm.jsx
+│
+├── .github/
+│   └── workflows/
+│        ├── backend.yml        # Deployment zu Azure App Service
+│        └── frontend.yml       # Deployment zu GitHub Pages
+│
+├── .gitignore
+└── README.md
