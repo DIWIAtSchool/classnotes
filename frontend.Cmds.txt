@@ -1,0 +1,18 @@
+frontend/
+ ├── src/
+ │    ├── components/
+ │    │     ├── NoteList.jsx
+ │    │     └── AddNoteForm.jsx
+ │    ├── App.jsx
+ │    └── api.js
+ ├── package.json
+ └── vite.config.js
+
+### CreateBuilder
+npm create vite@latest frontend
+cd frontend
+npm install
+npm run dev
+
+https://www.toptal.com/developers/gitignore/
+
