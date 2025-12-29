@@ -1,5 +1,5 @@
 classnotes/
-├── backend/
+├── ClassNotes.Api/
 │   ├── ClassNotes.Api.csproj
 │   ├── Program.cs
 │   ├── Models/
@@ -17,9 +17,8 @@ classnotes/
 │   └── src/
 │        ├── App.jsx
 │        ├── api.js
-│        └── components/
-│             ├── NoteList.jsx
-│             └── AddNoteForm.jsx
+|        ├── NoteList.jsx
+|        └── AddNoteForm.jsx
 │
 ├── .github/
 │   └── workflows/
