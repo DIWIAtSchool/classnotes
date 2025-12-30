@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'ClassNotes.Api/**'
+      - '.github/workflows/backend.yml'
 
 jobs:
   build-and-deploy:
