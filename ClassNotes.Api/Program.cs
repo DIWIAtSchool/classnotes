@@ -28,15 +28,15 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+app.MapOpenApi();
+app.UseSwagger();
+app.UseSwaggerUI();
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseHttpsRedirection();
 }
-
-app.UseHttpsRedirection();
 
 // CORS aktivieren
 app.UseCors("AllowReactApp");
@@ -91,7 +91,7 @@ app.MapPost("/notes", async (Note note, NotesDbContext db) =>
     return Results.Created($"/notes/{note.Id}", note); 
 }); 
 
-// Notiz löschen
+// Notiz lï¿½schen
 app.MapDelete("/notes/{id}", async (int id, NotesDbContext db) => 
 { 
     var note = await db.Notes.FindAsync(id); 
