@@ -16,3 +16,5 @@ npm run dev
 
 https://www.toptal.com/developers/gitignore/
 
+GitHub --> Repository → Settings → Pages
+--> Source: „GitHub Actions“ auswählen

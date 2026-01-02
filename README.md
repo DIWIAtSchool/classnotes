@@ -1,3 +1,10 @@
+# Mini‑Web‑App „ClassNotes“ mit CI/CD-Pipeline über GitHub Action
+## CI (Continuous Integration)
+## CD (Continuous Deployment)
+### Backend mit C# als Minimal Web-Api
+### Frontend als React-App
+-------------------------------------
+
 ```mermaid
 flowchart LR
   %% === Entwickler ===
