@@ -8,6 +8,14 @@ dotnet add package Microsoft.EntityFrameworkCore.Design
 dotnet add package Microsoft.EntityFrameworkCore.Tools
 dotnet add package Swashbuckle.AspNetCore
 
+dotnet new sln -n classnotes
+dotnet sln add "ClassNotes.Api/ClassNotes.Api.csproj"
+
+### API Deployment
+- In Azure → App Service → „Get Publish Profile“
+- Datei öffnen → gesamten XML‑Inhalt in GitHub Secret AZURE_PUBLISH_PROFILE speichern
+
+
 ### Model
 namespace ClassNotes.Api.Models;
 
@@ -92,3 +100,4 @@ app.MapDelete("/notes/{id}", async (int id, NotesDbContext db) =>
 });
 
 app.Run();
+
